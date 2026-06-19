@@ -253,14 +253,16 @@ h2 {
 }
 
 .skills-grid,
-.project-grid {
+.project-grid,
+.team-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
 .skill,
-.project-card {
+.project-card,
+.team-card {
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -389,6 +391,122 @@ body.dark .tag {
   color: #ffe08a;
 }
 
+/* ===== Team Page Styles ===== */
+/* CHANGED BY Jisan: Added team-grid, team-card, team-number, team-avatar, team-links styles for team.html */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.team-card {
+  padding: 28px 24px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  text-align: center;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.team-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.team-avatar {
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.team-card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.team-role {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.team-bio {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.team-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.team-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.team-link {
+  background: var(--primary);
+  color: #ffffff !important;
+}
+
+.team-link:hover {
+  background: var(--primary-strong);
+}
+
+.team-links a:not(.team-link) {
+  background: rgba(15, 118, 110, 0.08);
+  color: var(--primary-strong);
+}
+
+.team-links a:not(.team-link):hover {
+  background: rgba(15, 118, 110, 0.16);
+}
+
+body.dark .team-links a:not(.team-link) {
+  background: rgba(45, 212, 191, 0.12);
+  color: var(--primary-strong);
+}
+
+body.dark .team-links a:not(.team-link):hover {
+  background: rgba(45, 212, 191, 0.2);
+}
+
+/* ===== End Team Page Styles ===== */
+
 @media (max-width: 760px) {
   .site-header {
     align-items: flex-start;
@@ -404,7 +522,8 @@ body.dark .tag {
   .hero,
   .about-grid,
   .skills-grid,
-  .project-grid {
+  .project-grid,
+  .team-grid {
     grid-template-columns: 1fr;
   }
 
