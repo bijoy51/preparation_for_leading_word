@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farhan Tasnim | Portfolio</title>
+  <link rel="stylesheet" href="f_style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">Farhan</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeBtn" class="icon-btn" type="button" aria-label="Toggle dark mode">Dark</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">AI Engineer | ML/DL Researcher</p>
+        <h1>Farhan Tasnim</h1>
+        <p class="intro">
+          I build AI-powered applications, currently focused on building production-ready AI systems. I also have interest in research on ML, DL, and AI in financial sectors.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="mailto:vairafiq@gmail.com">Contact Me</a>
+        </div>
+      </div>
+      <div class="profile-panel" aria-label="Profile summary">
+        <div class="avatar" style="background: linear-gradient(135deg, var(--coral), var(--accent));">FT</div>
+        <h2>AI Engineer</h2>
+        <p>Production-ready AI systems, ML/DL research, and collaborative projects.</p>
+        <div class="stats">
+          <span><strong>AI</strong> Systems</span>
+          <span><strong>ML/DL</strong> Research</span>
+          <span><strong>Finance</strong> AI</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Building AI that works in production</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>
+            I am Farhan Tasnim, an AI engineer focused on building production-ready AI systems. I build AI-powered applications and have a strong interest in research on machine learning, deep learning, and AI applications in financial sectors.
+          </p>
+          <p>
+            I have built a movie recommendation system and a NASNet-based image classifier using TensorFlow and Google Colab. I also contributed to DokanAI, an AI-powered ecommerce platform.
+          </p>
+        </div>
+        <div class="info-list">
+          <p><span>Focus</span> AI Engineering & ML/DL Research</p>
+          <p><span>Domain</span> Production AI, Finance AI, Computer Vision</p>
+          <p><span>Email</span> vairafiq@gmail.com</p>
+          <p><span>Collaboration</span> DokanAI</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section muted reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical strengths</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill" data-level="90">
+          <div><span>Machine Learning</span><b>90%</b></div>
+          <i></i>
+        </div>
+        <div class="skill" data-level="85">
+          <div><span>Deep Learning</span><b>85%</b></div>
+          <i></i>
+        </div>
+        <div class="skill" data-level="80">
+          <div><span>TensorFlow</span><b>80%</b></div>
+          <i></i>
+        </div>
+        <div class="skill" data-level="75">
+          <div><span>Web Development</span><b>75%</b></div>
+          <i></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="tag">AI Product</p>
+          <h3>DokanAI</h3>
+          <p>AI-powered ecommerce system — contributed collaboratively to build a smarter online selling platform.</p>
+          <a href="https://github.com/bijoy51/Dokanai" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+        <article class="project-card">
+          <p class="tag">ML/DL</p>
+          <h3>NASNet Image Classifier</h3>
+          <p>A NASNet-based image classifier built with TensorFlow and Google Colab for production-grade image recognition.</p>
+          <a href="https://github.com" target="_blank" rel="noopener">View GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's connect</h2>
+      </div>
+      <div class="contact-actions">
+        <button id="copyEmail" class="btn primary" type="button">Copy Email</button>
+        <a class="btn secondary" href="https://github.com/bijoy51" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p id="copyStatus" class="copy-status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Farhan Tasnim</p>
+  </footer>
+
+  <script src="my_script.js"></script>
+</body>
+</html>
