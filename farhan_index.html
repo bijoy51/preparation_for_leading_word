@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farhan Tasnim | Portfolio</title>
+  <link rel="stylesheet" href="f_style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <!-- ADDED BY JISAN: Farhan Tasnim's team profile -->
+    <a class="logo" href="#home">Farhan</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeBtn" class="icon-btn" type="button" aria-label="Toggle dark mode">Dark</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero reveal">
+      <!-- ADDED BY JISAN: Hero section with introduction -->
+      <div class="hero-copy">
+        <p class="eyebrow">AI/ML Engineer | ML Research</p>
+        <h1>Farhan Tasnim</h1>
+        <p class="intro">
+          Production-ready AI systems developer with focus on financial AI, deep learning, and building deployable ML solutions.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="mailto:farhan@example.com">Contact Me</a>
+        </div>
+      </div>
+      <div class="profile-panel" aria-label="Profile summary">
+        <div class="avatar">FT</div>
+        <h2>AI Systems Builder</h2>
+        <p>Production ML, financial AI, and research projects.</p>
+        <div class="stats">
+          <span><strong>AI/ML</strong> Systems</span>
+          <span><strong>Financial</strong> AI</span>
+          <span><strong>Deep</strong> Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <!-- ADDED BY JISAN: About section with professional background -->
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Building production-ready AI systems</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>
+            I am Farhan Tasnim, a developer specializing in building production-ready AI systems and financial AI applications. I have experience with machine learning, deep learning, and building deployable AI solutions.
+          </p>
+          <p>
+            My work focuses on ML/DL research in financial sectors, creating practical AI tools that can be deployed in real-world scenarios. I have built various systems including movie recommendation engines and NASNet-based classifiers.
+          </p>
+        </div>
+        <div class="info-list">
+          <p><span>Focus</span> Financial AI & ML Systems</p>
+          <p><span>Technologies</span> TensorFlow, Python, Google Colab</p>
+          <p><span>Projects</span> Movie Recommendation, NASNet Classifier</p>
+          <p><span>GitHub</span> bijoy51/Dokanai</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section muted reveal">
+      <!-- ADDED BY JISAN: Skills section with technical expertise -->
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical strengths</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill" data-level="90">
+          <div><span>Machine Learning</span><b>90%</b></div>
+          <i></i>
+        </div>
+        <div class="skill" data-level="85">
+          <div><span>Deep Learning</span><b>85%</b></div>
+          <i></i>
+        </div>
+        <div class="skill" data-level="80">
+          <div><span>Financial AI</span><b>80%</b></div>
+          <i></i>
+        </div>
+        <div class="skill" data-level="75">
+          <div><span>TensorFlow</span><b>75%</b></div>
+          <i></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <!-- ADDED BY JISAN: Projects section showcasing work -->
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="tag">AI Product</p>
+          <h3>Movie Recommendation System</h3>
+          <p>Built a movie recommendation system using machine learning algorithms to provide personalized movie suggestions.</p>
+          <a href="#">View Project</a>
+        </article>
+        <article class="project-card">
+          <p class="tag">Computer Vision</p>
+          <h3>NASNet-based Image Classifier</h3>
+          <p>Developed an NASNet-based image classifier using TensorFlow and Google Colab for automated architecture search.</p>
+          <a href="#">View Project</a>
+        </article>
+        <article class="project-card">
+          <p class="tag">Financial AI</p>
+          <h3>DokanAI</h3>
+          <p>Collaborated on DokanAI - an AI-powered ecommerce system designed to make online selling smarter and more efficient.</p>
+          <a href="https://github.com/bijoy51/Dokanai" target="_blank" rel="noopener">View GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <!-- ADDED BY JISAN: Contact section with connection options -->
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's connect</h2>
+      </div>
+      <div class="contact-actions">
+        <button id="copyEmail" class="btn primary" type="button">Copy Email</button>
+        <a class="btn secondary" href="https://www.linkedin.com/in/farhan-tasnim/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn secondary" href="https://github.com/bijoy51" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p id="copyStatus" class="copy-status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Farhan Tasnim</p>
+  </footer>
+
+  <script src="farhan_script.js"></script>
+</body>
+</html>

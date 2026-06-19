@@ -1,3 +1,4 @@
+// ADDED BY JISAN: JavaScript functionality for Farhan Tasnim's profile page
 const themeBtn = document.getElementById("themeBtn");
 const copyEmailBtn = document.getElementById("copyEmail");
 const copyStatus = document.getElementById("copyStatus");
@@ -5,8 +6,9 @@ const navLinks = document.querySelectorAll(".nav-links a");
 const sections = document.querySelectorAll("main section[id]");
 const revealItems = document.querySelectorAll(".reveal");
 const skills = document.querySelectorAll(".skill");
-const email = "fayezah1010@gmail.com";
+const email = "farhan@example.com";
 
+// Theme toggle
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
   themeBtn.textContent = "Light";
@@ -19,6 +21,7 @@ themeBtn.addEventListener("click", () => {
   localStorage.setItem("theme", isDark ? "dark" : "light");
 });
 
+// Copy email to clipboard
 copyEmailBtn.addEventListener("click", async () => {
   try {
     await navigator.clipboard.writeText(email);
@@ -32,6 +35,7 @@ copyEmailBtn.addEventListener("click", async () => {
   }, 2600);
 });
 
+// Intersection observer for fading/slide-in animations
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -51,6 +55,7 @@ const observer = new IntersectionObserver(
 
 revealItems.forEach((item) => observer.observe(item));
 
+// Smooth active link updates on scroll
 window.addEventListener("scroll", () => {
   let activeId = "home";
 
@@ -61,6 +66,10 @@ window.addEventListener("scroll", () => {
   });
 
   navLinks.forEach((link) => {
-    link.classList.toggle("active", link.getAttribute("href") === "#" + activeId);
+    // Only toggle active if it points to an anchor on this page
+    const href = link.getAttribute("href");
+    if (href.startsWith("#")) {
+      link.classList.toggle("active", href === "#" + activeId);
+    }
   });
 });
