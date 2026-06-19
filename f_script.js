@@ -7,16 +7,9 @@ const revealItems = document.querySelectorAll(".reveal");
 const skills = document.querySelectorAll(".skill");
 const email = "fayezah1010@gmail.com";
 
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark");
-  themeBtn.textContent = "Light";
-}
-
 themeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-  const isDark = document.body.classList.contains("dark");
-  themeBtn.textContent = isDark ? "Light" : "Dark";
-  localStorage.setItem("theme", isDark ? "dark" : "light");
+  themeBtn.textContent = document.body.classList.contains("dark") ? "Light" : "Dark";
 });
 
 copyEmailBtn.addEventListener("click", async () => {
